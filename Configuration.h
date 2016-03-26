@@ -53,7 +53,7 @@
 // 21 = Elefu Ra Board (v3)
 
 #ifndef MOTHERBOARD
-#define MOTHERBOARD 34 //arn
+#define MOTHERBOARD 33 //arn
 #endif
 
 // Define this to set a custom name for your generic Mendel,
@@ -335,7 +335,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // For deltabots this means top and center of the cartesian print volume.
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 283  // For delta: Distance between nozzle and print surface after homing.
+#define MANUAL_Z_HOME_POS 293.05  // For delta: Distance between nozzle and print surface after homing.
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
@@ -348,7 +348,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // default settings
 
 //arn #define DEFAULT_AXIS_STEPS_PER_UNIT   {100, 100, 100, 1250}
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 80, 100}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {160, 160, 160, 200}
 #define DEFAULT_MAX_FEEDRATE          {200, 200, 200, 25}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,9000,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
